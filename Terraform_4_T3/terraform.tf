@@ -10,7 +10,9 @@ terraform {
     }
   }
 
-    backend "s3" {
+
+#To maintain the state in S3 Bucket remotely.
+  backend "s3" {
     bucket = "my-bucket-d3fe2317d466c103"
     key    = "T3.tfstate"
     region = "us-east-2"
